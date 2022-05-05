@@ -2,9 +2,9 @@ node{
 
 echo "Job Name is: ${env.JOB_NAME}"
 echo "Node name is: ${env.NODE_NAME}"
-
-
-def mavenHome = tool name: 'mven3.8.4'
+ 
+ properties([buildDiscarder(logRotator(artifactDaysToKeepStr: '', artifactNumToKeepStr: '5', daysToKeepStr: '', numToKeepStr: '5')), [$class: 'JobLocalConfiguration', changeReasonComment: ''], pipelineTriggers([pollSCM('* * * * *')])])
+ def mavenHome = tool name: 'mven3.8.4'
 
 //Get the code from Github Repo
 stage('CheckoutCode'){
