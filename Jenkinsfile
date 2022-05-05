@@ -64,8 +64,7 @@ sh "scp -o StrictHostKeyChecking=no target/maven-web-application.war ec2-user@44
 
 }
 */
-} 
-//Try Closing
+}//Try Closing
   catch(e){
   currentBuild.result = "FAILED"
   }
