@@ -42,7 +42,7 @@ git branch: 'development', credentialsId: '30818f7a-8627-428d-9866-284af7661306'
  }
 //Do the build by using Maven Build tool
 stage('Build'){
-sh "${mavenHome}/bin/mvn clean package"
+sh "${mavenHome}/bin/mvn clean packag"
 }
 /*
 //Execute the SonarQube Report 
