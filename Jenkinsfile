@@ -34,8 +34,7 @@ echo "Node name is: ${env.NODE_NAME}"
  def mavenHome = tool name: 'mven3.8.4'
 
  try{
- }//Try closing
- }//Node Closing
+   
  
 //Get the code from Github Repo
 stage('CheckoutCode'){
