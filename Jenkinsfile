@@ -71,6 +71,6 @@ sh "scp -o StrictHostKeyChecking=no target/maven-web-application.war ec2-user@44
   finally{
    
 sendSlackNotifications(currentBuild.result) 
-  }
+}
 }//Node Closing
 
